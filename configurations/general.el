@@ -1,7 +1,9 @@
 ;; load-paths
 (add-to-list 'load-path "~/.emacs.d/")
 
-(put 'downcase-region 'disabled nil)
+;; set default direcotory to home 
+(setq default-directory "~/") 
+(setq command-line-default-directory "~/")
 
 ;; Startup Screen
 (setq inhibit-startup-message t)
@@ -28,4 +30,3 @@
 (autoload 'gnuserv-start "gnuserv-compat"
   "Allow this Emacs process to be a server for client processes." t)
 (server-start)
-
