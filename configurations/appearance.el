@@ -20,3 +20,6 @@
 		    'append)
   (add-to-list 'default-frame-alist '(font . "fontset-menlokakugo")))
 
+
+;; Cyberpunk theme
+(load-theme 'cyberpunk t)
