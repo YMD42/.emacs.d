@@ -9,10 +9,6 @@
 (setq inhibit-startup-message t)
 (setq initial-scratch-message nil)
 
-;; 日本語の設定（UTF-8）
-(set-language-environment 'Japanese)
-(prefer-coding-system 'utf-8)
-
 ;; tabs and indent
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
