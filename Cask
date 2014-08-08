@@ -27,3 +27,6 @@
 (depends-on "yasnippet")
 
 (depends-on "helm")
+
+;; cyberpunk theme (MELPA)
+(depends-on "cyberpunk-theme")

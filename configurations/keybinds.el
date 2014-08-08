@@ -8,6 +8,13 @@
 (global-set-key [(control .)] 'enlarge-window-horizontally)
 (global-set-key [(control >)] 'shrink-window-horizontally)
 
-;; anything
-;; (global-set-key "\M-x" 'my-anything)
-;; (global-set-key "\M-y" 'anything-show-kill-ring)
+;; Helm ;;
+
+;; finding files
+(global-set-key (kbd "C-x F") 'helm-find-files)
+(global-set-key [(control x) (control f)] 'helm-for-files)
+
+;; For find-file etc.
+(define-key helm-read-file-map (kbd "TAB") 'helm-execute-persistent-action)
+;; For helm-find-files etc.
+(define-key helm-find-files-map (kbd "TAB") 'helm-execute-persistent-action)
