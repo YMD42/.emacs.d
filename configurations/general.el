@@ -26,3 +26,11 @@
 (autoload 'gnuserv-start "gnuserv-compat"
   "Allow this Emacs process to be a server for client processes." t)
 (server-start)
+
+;; Backup setting
+(setq auto-save-file-name-transforms
+      `((".*" ,(expand-file-name "~/.emacs.d/backup/") t)))
+(setq backup-directory-alist
+      (cons (cons "\\.*$" (expand-file-name "~/.emacs.d/backup"))
+            backup-directory-alist))
+
