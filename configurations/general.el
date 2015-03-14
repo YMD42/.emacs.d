@@ -22,7 +22,18 @@
 (setq recentf-max-menu-items 8)
 (setq recentf-max-saved-items 512)
 
+;; create backup file in ~/.emacs.d/backup
+(setq make-backup-files t)
+(setq backup-directory-alist
+  (cons (cons "\\.*$" (expand-file-name "~/.emacs.d/backup"))
+    backup-directory-alist))
+
+;; create auto-save file in ~/.emacs.d/backup
+(setq auto-save-file-name-transforms
+      `((".*" ,(expand-file-name "~/.emacs.d/backup/") t)))
+
 ;; Gnuserv
 (autoload 'gnuserv-start "gnuserv-compat"
   "Allow this Emacs process to be a server for client processes." t)
 (server-start)
+
