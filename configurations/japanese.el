@@ -13,3 +13,5 @@
 		    'append)
   (add-to-list 'default-frame-alist '(font . "fontset-menlokakugo")))
 
+;; back slash
+(define-key global-map [?¥] [?\\])
