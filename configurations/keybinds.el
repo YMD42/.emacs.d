@@ -26,3 +26,8 @@
 (define-key helm-read-file-map (kbd "TAB") 'helm-execute-persistent-action)
 ;; For helm-find-files etc.
 (define-key helm-find-files-map (kbd "TAB") 'helm-execute-persistent-action)
+
+;; macros ----------------------------------------------------------------------
+
+;; indent buffer
+(global-set-key (kbd "C-x <backtab>") 'indent-buffer)

@@ -10,4 +10,5 @@
   (menu-bar-mode 0))
 
 ;; Cyberpunk theme
+(add-to-list 'custom-theme-load-path (locate-user-emacs-file "el-get/cyberpunk-theme"))
 (load-theme 'cyberpunk t)
