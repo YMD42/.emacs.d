@@ -37,3 +37,8 @@
   "Allow this Emacs process to be a server for client processes." t)
 (server-start)
 
+;; uniquify
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'post-forward-angle-brackets)
+
+
