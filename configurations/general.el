@@ -1,5 +1,5 @@
 ;; load-paths
-(add-to-list 'load-path "~/.emacs.d/")
+;; (add-to-list 'load-path "~/.emacs.d/")
 
 ;; set default direcotory to home 
 (setq default-directory "~/") 

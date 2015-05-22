@@ -16,5 +16,10 @@
 ;; other configurations
 ;; load all ~/.emacs.d/configurations/*el files
 (mapc 'load-file
-      (directory-files (locate-user-emacs-file "configurations")
-		       t "\\.el$"))
+      (remove-if '(lambda (filename) 
+                    (or (string-match load-file-name filename)
+                        (string-match "\\([#~]\\)" filename)))
+                 (directory-files (locate-user-emacs-file "configurations")
+                                  t "\\.el$")))
+
+
