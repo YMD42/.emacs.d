@@ -1,6 +1,7 @@
 ;; 日本語の設定（UTF-8）
 (set-language-environment 'Japanese)
 (prefer-coding-system 'utf-8)
+(define-key global-map [?¥] [?\\])  ;; ¥の代わりにバックスラッシュを入力する
 
 ;; フォントの設定
 ;; 出典：http://sakito.jp/emacs/emacs23.html

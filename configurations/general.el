@@ -30,7 +30,7 @@
 
 ;; create auto-save file in ~/.emacs.d/backup
 (setq auto-save-file-name-transforms
-      `((".*" ,(expand-file-name "~/.emacs.d/backup/") t)))
+      `((".*", (expand-file-name "~/.emacs.d/backup") t)))
 
 ;; Gnuserv
 (autoload 'gnuserv-start "gnuserv-compat"

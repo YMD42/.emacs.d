@@ -45,3 +45,6 @@
   (setq web-mode-script-padding 1)
   (setq web-mode-block-padding 0))
 (add-hook 'web-mode-hook 'my-web-mode-hook)
+
+;; python-mode
+(setq python-indent-offset 4)
